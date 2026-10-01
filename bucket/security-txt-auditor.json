@@ -1,0 +1,18 @@
+{
+    "version": "1.0.0",
+    "description": "Audit robots.txt and security.txt (RFC 9116) for common misconfigurations",
+    "homepage": "https://git.canutethegreat.com/CanuteTheGreat/security-txt-auditor",
+    "license": "MIT",
+    "url": "https://git.canutethegreat.com/CanuteTheGreat/security-txt-auditor/archive/v1.0.0.zip",
+    "hash": "c13b4c0f11e3ed157076bf379c804d9062909f43a6727a7c9b37ae6f8c016510",
+    "extract_dir": "security-txt-auditor",
+    "depends": "python",
+    "bin": [
+        [
+            "security_txt_auditor.py",
+            "security-txt-auditor"
+        ]
+    ],
+    "checkver": "github",
+    "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`). Run: security-txt-auditor example.com"
+}
