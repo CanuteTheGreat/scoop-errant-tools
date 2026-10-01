@@ -1,0 +1,18 @@
+{
+    "version": "1.0.0",
+    "description": "Read-only Docker security baseline checker (CIS-adjacent), free and zero-dependency",
+    "homepage": "https://git.canutethegreat.com/CanuteTheGreat/docker-baseline-auditor",
+    "license": "MIT",
+    "url": "https://git.canutethegreat.com/CanuteTheGreat/docker-baseline-auditor/archive/v1.0.0.zip",
+    "hash": "0b10c31ddc8b071ade4200d92fc8c2dc995eb58b82d98591781d246243ce4f7d",
+    "extract_dir": "docker-baseline-auditor",
+    "depends": "python",
+    "bin": [
+        [
+            "docker-baseline-auditor.py",
+            "docker-baseline-auditor"
+        ]
+    ],
+    "checkver": "github",
+    "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`) and Docker CLI on PATH. Run: docker-baseline-auditor [--json]"
+}
