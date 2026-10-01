@@ -1,0 +1,18 @@
+{
+    "version": "1.0.0",
+    "description": "Monitor Certificate Transparency logs for unexpected issuers/subdomains, free via crt.sh",
+    "homepage": "https://git.canutethegreat.com/CanuteTheGreat/cert-transparency-watcher",
+    "license": "MIT",
+    "url": "https://git.canutethegreat.com/CanuteTheGreat/cert-transparency-watcher/archive/v1.0.0.zip",
+    "hash": "52b7580d4f7410dc8618625aa064409bc78e2f782a65650efe385d8d8453c904",
+    "extract_dir": "cert-transparency-watcher",
+    "depends": "python",
+    "bin": [
+        [
+            "cert_transparency_watcher.py",
+            "cert-transparency-watcher"
+        ]
+    ],
+    "checkver": "github",
+    "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`). Run: cert-transparency-watcher example.com"
+}
