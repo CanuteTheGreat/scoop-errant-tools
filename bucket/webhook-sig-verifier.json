@@ -1,0 +1,18 @@
+{
+    "version": "1.0.0",
+    "description": "Verify webhook HMAC signatures locally (GitHub/Stripe/Slack/generic), free and zero-dependency",
+    "homepage": "https://git.canutethegreat.com/CanuteTheGreat/webhook-sig-verifier",
+    "license": "MIT",
+    "url": "https://git.canutethegreat.com/CanuteTheGreat/webhook-sig-verifier/archive/v1.0.0.zip",
+    "hash": "700d20da6b316e65b57945222438c40ff16c3633deff5f235c911fc6fa4b4efa",
+    "extract_dir": "webhook-sig-verifier",
+    "depends": "python",
+    "bin": [
+        [
+            "webhook_sig_verifier.py",
+            "webhook-sig-verifier"
+        ]
+    ],
+    "checkver": "github",
+    "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`). Run: webhook-sig-verifier --scheme github --secret ... --payload-file ... --signature ..."
+}
