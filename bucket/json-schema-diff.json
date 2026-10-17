@@ -1,10 +1,10 @@
 {
-    "version": "1.2.1",
+    "version": "1.2.2",
     "description": "Classify JSON Schema and OpenAPI changes as breaking, compatible or informational for CI gates",
     "homepage": "https://errant.solutions/tools/json-schema-diff.html",
     "license": "MIT",
-    "url": "https://git.canutethegreat.com/CanuteTheGreat/json-schema-diff/archive/v1.2.1.zip",
-    "hash": "a764f518c04d429a12945486f9ef7bff792afdec573f697944a3e5c68c2ba783",
+    "url": "https://git.canutethegreat.com/CanuteTheGreat/json-schema-diff/archive/v1.2.2.zip",
+    "hash": "9dc33d4484229a6b69777148267e5d45fb338ba9714c11626e8520a33c92f08d",
     "extract_dir": "json-schema-diff",
     "depends": "python",
     "bin": [
