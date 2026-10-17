@@ -1,10 +1,10 @@
 {
-    "version": "1.2.1",
+    "version": "1.2.2",
     "description": "Audit sshd_config, sshd -T or a live SSH server's offered algorithms against CIS/NIST SSH hardening guidance",
     "homepage": "https://errant.solutions/tools/sshd-hardening-auditor.html",
     "license": "MIT",
-    "url": "https://git.canutethegreat.com/CanuteTheGreat/sshd-hardening-auditor/archive/v1.2.1.zip",
-    "hash": "ef6c0cec0a493dbdaf2e709db9ee7d68c13cee8747d2726b8243acde8dbf6cbe",
+    "url": "https://git.canutethegreat.com/CanuteTheGreat/sshd-hardening-auditor/archive/v1.2.2.zip",
+    "hash": "458b36c9f89fc02c8601b87d389dddc100e54e10d89e82dc05ff622735056704",
     "extract_dir": "sshd-hardening-auditor",
     "depends": "python",
     "bin": [
