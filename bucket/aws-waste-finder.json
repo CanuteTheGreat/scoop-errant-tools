@@ -1,10 +1,10 @@
 {
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "Read-only AWS cost-drain scanner across regions with estimated monthly savings",
     "homepage": "https://errant.solutions/tools/aws-waste-finder.html",
     "license": "MIT",
-    "url": "https://git.canutethegreat.com/CanuteTheGreat/aws-waste-finder/archive/v1.2.0.zip",
-    "hash": "92a9d4d0510391ebb0413b522e366aa84e7917b362bc6801ca27e9c677cb0cff",
+    "url": "https://git.canutethegreat.com/CanuteTheGreat/aws-waste-finder/archive/v1.2.1.zip",
+    "hash": "2ce14b8b51347eab55f525a4e77a9bbbc127a420d872bd335a477216842c4273",
     "extract_dir": "aws-waste-finder",
     "depends": "python",
     "bin": [

@@ -1,10 +1,10 @@
 {
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "Find dangling DNS records and subdomain-takeover setups, plus CAA and DNSSEC checks, via DoH",
     "homepage": "https://errant.solutions/tools/dns-hygiene-checker.html",
     "license": "MIT",
-    "url": "https://git.canutethegreat.com/CanuteTheGreat/dns-hygiene-checker/archive/v1.2.0.zip",
-    "hash": "18c687f40f49f9c382fea4e4a78789c97517f9df6114c0dd5b1501892a2be1fb",
+    "url": "https://git.canutethegreat.com/CanuteTheGreat/dns-hygiene-checker/archive/v1.2.1.zip",
+    "hash": "71f1a8c5dba54e3dc9e715027c3d86800f6a2ecb459acd223b60d80da863152a",
     "extract_dir": "dns-hygiene-checker",
     "depends": "python",
     "bin": [

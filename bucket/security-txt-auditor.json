@@ -1,10 +1,10 @@
 {
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "Audit robots.txt and security.txt (RFC 9116) for missing, expired or misconfigured fields",
     "homepage": "https://errant.solutions/tools/security-txt-auditor.html",
     "license": "MIT",
-    "url": "https://git.canutethegreat.com/CanuteTheGreat/security-txt-auditor/archive/v1.2.0.zip",
-    "hash": "05a051db3ecd01ee26deeaa19de0ff52369ce4035c64c78812a55fed68dec201",
+    "url": "https://git.canutethegreat.com/CanuteTheGreat/security-txt-auditor/archive/v1.2.1.zip",
+    "hash": "f5dc64f79d1663a7c9d70519908e528ba47f837917fdc836ec1bdffb98889b84",
     "extract_dir": "security-txt-auditor",
     "depends": "python",
     "bin": [

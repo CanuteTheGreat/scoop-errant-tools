@@ -1,10 +1,10 @@
 {
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "Live HTTP security header scanner with an A+ to F grade (HSTS, CSP, cookies, CORS, COOP/CORP, SRI)",
     "homepage": "https://errant.solutions/tools/http-header-auditor.html",
     "license": "MIT",
-    "url": "https://git.canutethegreat.com/CanuteTheGreat/http-header-auditor/archive/v1.2.0.zip",
-    "hash": "7076a2f706ec14b904cec33008e7af696f8a050696a4d1957937112d3d49c026",
+    "url": "https://git.canutethegreat.com/CanuteTheGreat/http-header-auditor/archive/v1.2.1.zip",
+    "hash": "c0130f14c9fa7e399bd3dea244c1fcdc2c12cac5f2b0ef8bd63042efc9ea1091",
     "extract_dir": "http-header-auditor",
     "depends": "python",
     "bin": [

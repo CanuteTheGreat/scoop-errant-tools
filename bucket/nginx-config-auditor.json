@@ -1,10 +1,10 @@
 {
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "Static analyzer for nginx configs (follows includes or nginx -T) flagging common misconfigurations",
     "homepage": "https://errant.solutions/tools/nginx-config-auditor.html",
     "license": "MIT",
-    "url": "https://git.canutethegreat.com/CanuteTheGreat/nginx-config-auditor/archive/v1.2.0.zip",
-    "hash": "dc8a92a62fe3255291ba7d11dbf353f785c4d8f2e536358653a35f630f9e9700",
+    "url": "https://git.canutethegreat.com/CanuteTheGreat/nginx-config-auditor/archive/v1.2.1.zip",
+    "hash": "afc757506c78c1cb7325fb87717b058013df3833661b982013abbb666787b952",
     "extract_dir": "nginx-config-auditor",
     "depends": "python",
     "bin": [

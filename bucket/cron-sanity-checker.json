@@ -1,10 +1,10 @@
 {
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "Lint cron schedules: impossible dates, typos, DOM/DOW OR gotcha, DST gaps, plain-English descriptions",
     "homepage": "https://errant.solutions/tools/cron-sanity-checker.html",
     "license": "MIT",
-    "url": "https://git.canutethegreat.com/CanuteTheGreat/cron-sanity-checker/archive/v1.2.0.zip",
-    "hash": "7a4925d79bd943c9ea0cae81525d375d8ec63d8c03f72f2446964d42408cd328",
+    "url": "https://git.canutethegreat.com/CanuteTheGreat/cron-sanity-checker/archive/v1.2.1.zip",
+    "hash": "a3b90560f4d263926449ffe03d6af331163d3a6c03b528d4914dd4daa5a3bed9",
     "extract_dir": "cron-sanity-checker",
     "depends": "python",
     "bin": [
