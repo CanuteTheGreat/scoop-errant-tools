@@ -1,0 +1,22 @@
+{
+    "version": "1.1.0",
+    "description": "Audit a live site's HTTP security headers, cookie flags and HTTPS redirect",
+    "homepage": "https://git.canutethegreat.com/CanuteTheGreat/http-header-auditor",
+    "license": "MIT",
+    "url": "https://git.canutethegreat.com/CanuteTheGreat/http-header-auditor/archive/v1.1.0.zip",
+    "hash": "1cd0843758ef087d96074948d6c91c94fa36e817ee52b27257381af5c30a1e0d",
+    "extract_dir": "http-header-auditor",
+    "depends": "python",
+    "bin": [
+        [
+            "http_header_auditor.py",
+            "http-header-auditor"
+        ]
+    ],
+    "checkver": {
+        "url": "https://git.canutethegreat.com/api/v1/repos/CanuteTheGreat/http-header-auditor/tags",
+        "jsonpath": "$[0].name",
+        "regex": "v([\\d.]+)"
+    },
+    "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`). Run: http-header-auditor https://example.com"
+}

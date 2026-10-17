@@ -1,10 +1,10 @@
 {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Classify JSON Schema changes as BREAKING, compatible, or info-only for API versioning",
     "homepage": "https://git.canutethegreat.com/CanuteTheGreat/json-schema-diff",
     "license": "MIT",
-    "url": "https://git.canutethegreat.com/CanuteTheGreat/json-schema-diff/archive/v1.0.0.zip",
-    "hash": "8660064998f8e9772bc04deb666d2f518a650b1a673056a2c07194bed96ab461",
+    "url": "https://git.canutethegreat.com/CanuteTheGreat/json-schema-diff/archive/v1.1.0.zip",
+    "hash": "d112ac80257a82f666c28eb80e2fcbbf01d04ad43bd811789814448b59254eb5",
     "extract_dir": "json-schema-diff",
     "depends": "python",
     "bin": [
@@ -13,6 +13,10 @@
             "json-schema-diff"
         ]
     ],
-    "checkver": "github",
+    "checkver": {
+        "url": "https://git.canutethegreat.com/api/v1/repos/CanuteTheGreat/json-schema-diff/tags",
+        "jsonpath": "$[0].name",
+        "regex": "v([\\d.]+)"
+    },
     "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`). Run: json-schema-diff old_schema.json new_schema.json"
 }

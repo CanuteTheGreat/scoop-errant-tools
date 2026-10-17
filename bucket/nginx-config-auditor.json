@@ -1,10 +1,10 @@
 {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Static analyzer for nginx config files flagging common misconfigurations, free and zero-dependency",
     "homepage": "https://git.canutethegreat.com/CanuteTheGreat/nginx-config-auditor",
     "license": "MIT",
-    "url": "https://git.canutethegreat.com/CanuteTheGreat/nginx-config-auditor/archive/v1.0.0.zip",
-    "hash": "fdcfc37f71204981238e60f2b94ed82bbd3cb49ab26461348e0f8f1773fc87f3",
+    "url": "https://git.canutethegreat.com/CanuteTheGreat/nginx-config-auditor/archive/v1.1.0.zip",
+    "hash": "a06e47efdd2177716f2dbd28a8168d4f9b68f43dabbca0ec8f00bec4183266a8",
     "extract_dir": "nginx-config-auditor",
     "depends": "python",
     "bin": [
@@ -13,6 +13,10 @@
             "nginx-config-auditor"
         ]
     ],
-    "checkver": "github",
+    "checkver": {
+        "url": "https://git.canutethegreat.com/api/v1/repos/CanuteTheGreat/nginx-config-auditor/tags",
+        "jsonpath": "$[0].name",
+        "regex": "v([\\d.]+)"
+    },
     "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`). Run: nginx-config-auditor /etc/nginx/nginx.conf"
 }

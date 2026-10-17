@@ -1,0 +1,22 @@
+{
+    "version": "1.1.0",
+    "description": "Catch impossible dates, typos and overlap in cron schedules, with next-run preview",
+    "homepage": "https://git.canutethegreat.com/CanuteTheGreat/cron-sanity-checker",
+    "license": "MIT",
+    "url": "https://git.canutethegreat.com/CanuteTheGreat/cron-sanity-checker/archive/v1.1.0.zip",
+    "hash": "df6965b317b94b2cd846990069f55837cd4f65a03b38995ca3505d9a14515319",
+    "extract_dir": "cron-sanity-checker",
+    "depends": "python",
+    "bin": [
+        [
+            "cron_sanity_checker.py",
+            "cron-sanity-checker"
+        ]
+    ],
+    "checkver": {
+        "url": "https://git.canutethegreat.com/api/v1/repos/CanuteTheGreat/cron-sanity-checker/tags",
+        "jsonpath": "$[0].name",
+        "regex": "v([\\d.]+)"
+    },
+    "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`). Run: cron-sanity-checker \"*/5 * * * *\" --show-next 3"
+}

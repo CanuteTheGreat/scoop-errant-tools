@@ -1,0 +1,22 @@
+{
+    "version": "1.1.0",
+    "description": "Read-only AWS cost drain scanner (EBS/EIP/NAT/snapshots/idle LBs)",
+    "homepage": "https://git.canutethegreat.com/CanuteTheGreat/aws-waste-finder",
+    "license": "MIT",
+    "url": "https://git.canutethegreat.com/CanuteTheGreat/aws-waste-finder/archive/v1.1.0.zip",
+    "hash": "5bd53f30c50bd27cf4e078e9f4cd196a3e3b56f354ce0d531e97ec8b422b05db",
+    "extract_dir": "aws-waste-finder",
+    "depends": "python",
+    "bin": [
+        [
+            "aws_waste_finder.py",
+            "aws-waste-finder"
+        ]
+    ],
+    "checkver": {
+        "url": "https://git.canutethegreat.com/api/v1/repos/CanuteTheGreat/aws-waste-finder/tags",
+        "jsonpath": "$[0].name",
+        "regex": "v([\\d.]+)"
+    },
+    "notes": "Requires Python 3 on PATH and boto3 (`pip install boto3`), plus AWS credentials. Run: aws-waste-finder --region us-east-1"
+}

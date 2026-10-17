@@ -1,0 +1,21 @@
+name: tests
+
+# Installs every manifest the way users do (real archive URL, real hash, real
+# entry points) and runs its test on every push, PR, and daily (an archive
+# that disappears or changes upstream breaks installs even with no commit here).
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "41 12 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  test:
+    runs-on: arm64
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install + test every manifest (capped container)
+        run: sh ci/run-tests.sh

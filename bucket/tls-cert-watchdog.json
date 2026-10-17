@@ -1,10 +1,10 @@
 {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Check TLS certificate expiry/chain health for one or more hosts",
     "homepage": "https://git.canutethegreat.com/CanuteTheGreat/tls-cert-watchdog",
     "license": "MIT",
-    "url": "https://git.canutethegreat.com/CanuteTheGreat/tls-cert-watchdog/archive/v1.0.0.zip",
-    "hash": "2151a4c41dff61eb504ee60876da2cc1d01e90753bd2d834f660fa78a7d0b165",
+    "url": "https://git.canutethegreat.com/CanuteTheGreat/tls-cert-watchdog/archive/v1.1.0.zip",
+    "hash": "aaf9b2468e7085bb2104fe9904471b253c6cd4448a3b1ae8f9289963ed9793ec",
     "extract_dir": "tls-cert-watchdog",
     "depends": "python",
     "bin": [
@@ -13,6 +13,10 @@
             "tls-cert-watchdog"
         ]
     ],
-    "checkver": "github",
+    "checkver": {
+        "url": "https://git.canutethegreat.com/api/v1/repos/CanuteTheGreat/tls-cert-watchdog/tags",
+        "jsonpath": "$[0].name",
+        "regex": "v([\\d.]+)"
+    },
     "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`). Run: tls-cert-watchdog --help"
 }

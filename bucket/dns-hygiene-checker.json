@@ -1,10 +1,10 @@
 {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Find dangling DNS records (subdomain takeover setups) before an attacker does, free via DoH",
     "homepage": "https://git.canutethegreat.com/CanuteTheGreat/dns-hygiene-checker",
     "license": "MIT",
-    "url": "https://git.canutethegreat.com/CanuteTheGreat/dns-hygiene-checker/archive/v1.0.0.zip",
-    "hash": "34951fd7b478c216453edd2e9a61a199c4372dc29d2f635534d462e197c92114",
+    "url": "https://git.canutethegreat.com/CanuteTheGreat/dns-hygiene-checker/archive/v1.1.0.zip",
+    "hash": "537763b300286b0b88da8b8a43ffd34511a9f147394d6291e4bc9e8f2131c893",
     "extract_dir": "dns-hygiene-checker",
     "depends": "python",
     "bin": [
@@ -13,6 +13,10 @@
             "dns-hygiene-checker"
         ]
     ],
-    "checkver": "github",
+    "checkver": {
+        "url": "https://git.canutethegreat.com/api/v1/repos/CanuteTheGreat/dns-hygiene-checker/tags",
+        "jsonpath": "$[0].name",
+        "regex": "v([\\d.]+)"
+    },
     "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`). Run: dns-hygiene-checker example.com"
 }

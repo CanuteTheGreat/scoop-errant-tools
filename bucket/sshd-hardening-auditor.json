@@ -1,10 +1,10 @@
 {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Audit sshd_config against CIS/NIST SSH hardening recommendations",
     "homepage": "https://git.canutethegreat.com/CanuteTheGreat/sshd-hardening-auditor",
     "license": "MIT",
-    "url": "https://git.canutethegreat.com/CanuteTheGreat/sshd-hardening-auditor/archive/v1.0.0.zip",
-    "hash": "99a2fe0bd712bdd0e5cf9fc601d2e8eeec9646fea7225f517883c54212e82580",
+    "url": "https://git.canutethegreat.com/CanuteTheGreat/sshd-hardening-auditor/archive/v1.1.0.zip",
+    "hash": "db8c79d377744facce8d2efa24ddbaaf3bce1119ade3f930b22d7c0f98cdaaee",
     "extract_dir": "sshd-hardening-auditor",
     "depends": "python",
     "bin": [
@@ -13,6 +13,10 @@
             "sshd-hardening-auditor"
         ]
     ],
-    "checkver": "github",
+    "checkver": {
+        "url": "https://git.canutethegreat.com/api/v1/repos/CanuteTheGreat/sshd-hardening-auditor/tags",
+        "jsonpath": "$[0].name",
+        "regex": "v([\\d.]+)"
+    },
     "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`). Run: sshd-hardening-auditor <path-to-sshd_config>"
 }
