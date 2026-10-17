@@ -1,10 +1,10 @@
 {
-    "version": "1.1.0",
-    "description": "Audit a live site's HTTP security headers, cookie flags and HTTPS redirect",
-    "homepage": "https://git.canutethegreat.com/CanuteTheGreat/http-header-auditor",
+    "version": "1.2.0",
+    "description": "Live HTTP security header scanner with an A+ to F grade (HSTS, CSP, cookies, CORS, COOP/CORP, SRI)",
+    "homepage": "https://errant.solutions/tools/http-header-auditor.html",
     "license": "MIT",
-    "url": "https://git.canutethegreat.com/CanuteTheGreat/http-header-auditor/archive/v1.1.0.zip",
-    "hash": "1cd0843758ef087d96074948d6c91c94fa36e817ee52b27257381af5c30a1e0d",
+    "url": "https://git.canutethegreat.com/CanuteTheGreat/http-header-auditor/archive/v1.2.0.zip",
+    "hash": "7076a2f706ec14b904cec33008e7af696f8a050696a4d1957937112d3d49c026",
     "extract_dir": "http-header-auditor",
     "depends": "python",
     "bin": [
@@ -18,5 +18,8 @@
         "jsonpath": "$[0].name",
         "regex": "v([\\d.]+)"
     },
-    "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`). Run: http-header-auditor https://example.com"
+    "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`). Run: http-header-auditor --help. Changelog: https://git.canutethegreat.com/CanuteTheGreat/http-header-auditor/releases",
+    "autoupdate": {
+        "url": "https://git.canutethegreat.com/CanuteTheGreat/http-header-auditor/archive/v$version.zip"
+    }
 }

@@ -1,10 +1,10 @@
 {
-    "version": "1.1.0",
-    "description": "Verify webhook HMAC signatures locally (GitHub/Stripe/Slack/generic), free and zero-dependency",
-    "homepage": "https://git.canutethegreat.com/CanuteTheGreat/webhook-sig-verifier",
+    "version": "1.2.0",
+    "description": "Verify and debug webhook signatures: GitHub, Stripe, Slack, Shopify, Standard Webhooks and generic HMAC",
+    "homepage": "https://errant.solutions/tools/webhook-sig-verifier.html",
     "license": "MIT",
-    "url": "https://git.canutethegreat.com/CanuteTheGreat/webhook-sig-verifier/archive/v1.1.0.zip",
-    "hash": "c5ddb470ecca955ce7260002d59cb2a2ea816ddccd61c4a25aa948173e884636",
+    "url": "https://git.canutethegreat.com/CanuteTheGreat/webhook-sig-verifier/archive/v1.2.0.zip",
+    "hash": "9e71c7ac12866be9e23ac4aad03f45dad7567fc576cd881e061d7b3b5052ae41",
     "extract_dir": "webhook-sig-verifier",
     "depends": "python",
     "bin": [
@@ -18,5 +18,8 @@
         "jsonpath": "$[0].name",
         "regex": "v([\\d.]+)"
     },
-    "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`). Run: webhook-sig-verifier --scheme github --secret ... --payload-file ... --signature ..."
+    "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`). Run: webhook-sig-verifier --help. Changelog: https://git.canutethegreat.com/CanuteTheGreat/webhook-sig-verifier/releases",
+    "autoupdate": {
+        "url": "https://git.canutethegreat.com/CanuteTheGreat/webhook-sig-verifier/archive/v$version.zip"
+    }
 }

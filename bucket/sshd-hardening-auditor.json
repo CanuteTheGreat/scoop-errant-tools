@@ -1,10 +1,10 @@
 {
-    "version": "1.1.0",
-    "description": "Audit sshd_config against CIS/NIST SSH hardening recommendations",
-    "homepage": "https://git.canutethegreat.com/CanuteTheGreat/sshd-hardening-auditor",
+    "version": "1.2.0",
+    "description": "Audit sshd_config, sshd -T or a live SSH server's offered algorithms against CIS/NIST SSH hardening guidance",
+    "homepage": "https://errant.solutions/tools/sshd-hardening-auditor.html",
     "license": "MIT",
-    "url": "https://git.canutethegreat.com/CanuteTheGreat/sshd-hardening-auditor/archive/v1.1.0.zip",
-    "hash": "db8c79d377744facce8d2efa24ddbaaf3bce1119ade3f930b22d7c0f98cdaaee",
+    "url": "https://git.canutethegreat.com/CanuteTheGreat/sshd-hardening-auditor/archive/v1.2.0.zip",
+    "hash": "1bd6ae955ad6126094660245ce02129f4497495837644f9e3b98a4f19a0dc3fc",
     "extract_dir": "sshd-hardening-auditor",
     "depends": "python",
     "bin": [
@@ -18,5 +18,8 @@
         "jsonpath": "$[0].name",
         "regex": "v([\\d.]+)"
     },
-    "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`). Run: sshd-hardening-auditor <path-to-sshd_config>"
+    "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`). Run: sshd-hardening-auditor --help. Changelog: https://git.canutethegreat.com/CanuteTheGreat/sshd-hardening-auditor/releases",
+    "autoupdate": {
+        "url": "https://git.canutethegreat.com/CanuteTheGreat/sshd-hardening-auditor/archive/v$version.zip"
+    }
 }

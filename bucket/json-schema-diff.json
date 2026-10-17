@@ -1,10 +1,10 @@
 {
-    "version": "1.1.0",
-    "description": "Classify JSON Schema changes as BREAKING, compatible, or info-only for API versioning",
-    "homepage": "https://git.canutethegreat.com/CanuteTheGreat/json-schema-diff",
+    "version": "1.2.0",
+    "description": "Classify JSON Schema and OpenAPI changes as breaking, compatible or informational for CI gates",
+    "homepage": "https://errant.solutions/tools/json-schema-diff.html",
     "license": "MIT",
-    "url": "https://git.canutethegreat.com/CanuteTheGreat/json-schema-diff/archive/v1.1.0.zip",
-    "hash": "d112ac80257a82f666c28eb80e2fcbbf01d04ad43bd811789814448b59254eb5",
+    "url": "https://git.canutethegreat.com/CanuteTheGreat/json-schema-diff/archive/v1.2.0.zip",
+    "hash": "2721fe6bdcb37aaa71141934d3a2db7f0718e7522080a5e0117007d32fd7e512",
     "extract_dir": "json-schema-diff",
     "depends": "python",
     "bin": [
@@ -18,5 +18,8 @@
         "jsonpath": "$[0].name",
         "regex": "v([\\d.]+)"
     },
-    "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`). Run: json-schema-diff old_schema.json new_schema.json"
+    "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`). Run: json-schema-diff --help. Changelog: https://git.canutethegreat.com/CanuteTheGreat/json-schema-diff/releases",
+    "autoupdate": {
+        "url": "https://git.canutethegreat.com/CanuteTheGreat/json-schema-diff/archive/v$version.zip"
+    }
 }

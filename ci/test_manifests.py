@@ -3,7 +3,7 @@
 
 For each manifest it downloads the real `url`, checks `hash` (sha256), unpacks the
 zip, checks `extract_dir` and every `bin` entry exist, and runs each bin with Python
-and `--help` (exit 0, prints usage). It also checks `version` matches the tag in the
+and `--help` (exit 0, prints usage) and `--version` (must print the manifest's version). It also checks `version` matches the tag in the
 URL and that `checkver` points at the tool's tag list on Forgejo.
 """
 import glob
@@ -39,7 +39,8 @@ def check(path):
     for k in ("version", "description", "homepage", "license", "url", "hash", "bin", "checkver"):
         assert k in m, f"manifest has no {k!r}"
     assert f"/v{m['version']}." in m["url"], f"version {m['version']} doesn't match url {m['url']}"
-    repo = m["homepage"].rstrip("/").rsplit("/", 1)[-1]
+    repo = m["url"].split("/CanuteTheGreat/", 1)[1].split("/", 1)[0]
+    assert m["homepage"] == f"https://errant.solutions/tools/{repo}.html", m["homepage"]
     assert m["checkver"].get("url", "").endswith(f"/repos/CanuteTheGreat/{repo}/tags"), m["checkver"]
     data = download(m["url"])
     got = hashlib.sha256(data).hexdigest()
@@ -60,6 +61,9 @@ def check(path):
             else:
                 assert p.returncode == 0 and "usage" in (p.stdout + p.stderr).lower(), \
                     f"{src} --help exited {p.returncode}: {p.stderr[-300:]}"
+                v = subprocess.run([sys.executable, exe, "--version"], capture_output=True, text=True, timeout=60)
+                assert v.returncode == 0 and v.stdout.strip().endswith(" " + m["version"]), \
+                    f"{src} --version printed {v.stdout.strip()!r}, manifest says {m['version']}"
     return m["url"]
 
 

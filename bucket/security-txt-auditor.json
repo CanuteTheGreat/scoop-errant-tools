@@ -1,10 +1,10 @@
 {
-    "version": "1.1.0",
-    "description": "Audit robots.txt and security.txt (RFC 9116) for common misconfigurations",
-    "homepage": "https://git.canutethegreat.com/CanuteTheGreat/security-txt-auditor",
+    "version": "1.2.0",
+    "description": "Audit robots.txt and security.txt (RFC 9116) for missing, expired or misconfigured fields",
+    "homepage": "https://errant.solutions/tools/security-txt-auditor.html",
     "license": "MIT",
-    "url": "https://git.canutethegreat.com/CanuteTheGreat/security-txt-auditor/archive/v1.1.0.zip",
-    "hash": "c9a69df8f95dcb7e1b193871417b4f98aa10808d306140f5f37f5bdd3bc8f9dd",
+    "url": "https://git.canutethegreat.com/CanuteTheGreat/security-txt-auditor/archive/v1.2.0.zip",
+    "hash": "05a051db3ecd01ee26deeaa19de0ff52369ce4035c64c78812a55fed68dec201",
     "extract_dir": "security-txt-auditor",
     "depends": "python",
     "bin": [
@@ -18,5 +18,8 @@
         "jsonpath": "$[0].name",
         "regex": "v([\\d.]+)"
     },
-    "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`). Run: security-txt-auditor example.com"
+    "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`). Run: security-txt-auditor --help. Changelog: https://git.canutethegreat.com/CanuteTheGreat/security-txt-auditor/releases",
+    "autoupdate": {
+        "url": "https://git.canutethegreat.com/CanuteTheGreat/security-txt-auditor/archive/v$version.zip"
+    }
 }

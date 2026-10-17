@@ -34,7 +34,7 @@ scoop install errant-tools/tls-cert-watchdog
 ```
 
 All tools are pure-stdlib Python 3 scripts except aws-waste-finder, which also needs
-`pip install boto3`. Requires Python 3 on PATH -- `scoop install python` or the official python.org installer with the `.py` file association enabled.
+`python -m pip install --user boto3`. Requires Python 3 on PATH -- `scoop install python` or the official python.org installer with the `.py` file association enabled.
 
 Source, issues, and the rest of our free tools: https://git.canutethegreat.com/CanuteTheGreat
 

@@ -1,10 +1,10 @@
 {
-    "version": "1.1.0",
-    "description": "Read-only AWS cost drain scanner (EBS/EIP/NAT/snapshots/idle LBs)",
-    "homepage": "https://git.canutethegreat.com/CanuteTheGreat/aws-waste-finder",
+    "version": "1.2.0",
+    "description": "Read-only AWS cost-drain scanner across regions with estimated monthly savings",
+    "homepage": "https://errant.solutions/tools/aws-waste-finder.html",
     "license": "MIT",
-    "url": "https://git.canutethegreat.com/CanuteTheGreat/aws-waste-finder/archive/v1.1.0.zip",
-    "hash": "5bd53f30c50bd27cf4e078e9f4cd196a3e3b56f354ce0d531e97ec8b422b05db",
+    "url": "https://git.canutethegreat.com/CanuteTheGreat/aws-waste-finder/archive/v1.2.0.zip",
+    "hash": "92a9d4d0510391ebb0413b522e366aa84e7917b362bc6801ca27e9c677cb0cff",
     "extract_dir": "aws-waste-finder",
     "depends": "python",
     "bin": [
@@ -18,5 +18,8 @@
         "jsonpath": "$[0].name",
         "regex": "v([\\d.]+)"
     },
-    "notes": "Requires Python 3 on PATH and boto3 (`pip install boto3`), plus AWS credentials. Run: aws-waste-finder --region us-east-1"
+    "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`). Needs boto3: `python -m pip install --user boto3`. Run: aws-waste-finder --help. Changelog: https://git.canutethegreat.com/CanuteTheGreat/aws-waste-finder/releases",
+    "autoupdate": {
+        "url": "https://git.canutethegreat.com/CanuteTheGreat/aws-waste-finder/archive/v$version.zip"
+    }
 }

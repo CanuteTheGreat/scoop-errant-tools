@@ -1,10 +1,10 @@
 {
-    "version": "1.1.0",
-    "description": "Monitor Certificate Transparency logs for unexpected issuers/subdomains, free via crt.sh",
-    "homepage": "https://git.canutethegreat.com/CanuteTheGreat/cert-transparency-watcher",
+    "version": "1.2.0",
+    "description": "Watch Certificate Transparency logs for new certificates, unexpected issuers and subdomains",
+    "homepage": "https://errant.solutions/tools/cert-transparency-watcher.html",
     "license": "MIT",
-    "url": "https://git.canutethegreat.com/CanuteTheGreat/cert-transparency-watcher/archive/v1.1.0.zip",
-    "hash": "1c1a832e5a30e15e2e475d73e0593ee542848db42075f68d4f26f93f3be36d43",
+    "url": "https://git.canutethegreat.com/CanuteTheGreat/cert-transparency-watcher/archive/v1.2.0.zip",
+    "hash": "5c3f1a276031eb6ba5ff5144248149ed466c3302fa809fba1f9d70bbaa7e6e62",
     "extract_dir": "cert-transparency-watcher",
     "depends": "python",
     "bin": [
@@ -18,5 +18,8 @@
         "jsonpath": "$[0].name",
         "regex": "v([\\d.]+)"
     },
-    "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`). Run: cert-transparency-watcher example.com"
+    "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`). Run: cert-transparency-watcher --help. Changelog: https://git.canutethegreat.com/CanuteTheGreat/cert-transparency-watcher/releases",
+    "autoupdate": {
+        "url": "https://git.canutethegreat.com/CanuteTheGreat/cert-transparency-watcher/archive/v$version.zip"
+    }
 }

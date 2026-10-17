@@ -1,10 +1,10 @@
 {
-    "version": "1.1.0",
-    "description": "Catch impossible dates, typos and overlap in cron schedules, with next-run preview",
-    "homepage": "https://git.canutethegreat.com/CanuteTheGreat/cron-sanity-checker",
+    "version": "1.2.0",
+    "description": "Lint cron schedules: impossible dates, typos, DOM/DOW OR gotcha, DST gaps, plain-English descriptions",
+    "homepage": "https://errant.solutions/tools/cron-sanity-checker.html",
     "license": "MIT",
-    "url": "https://git.canutethegreat.com/CanuteTheGreat/cron-sanity-checker/archive/v1.1.0.zip",
-    "hash": "df6965b317b94b2cd846990069f55837cd4f65a03b38995ca3505d9a14515319",
+    "url": "https://git.canutethegreat.com/CanuteTheGreat/cron-sanity-checker/archive/v1.2.0.zip",
+    "hash": "7a4925d79bd943c9ea0cae81525d375d8ec63d8c03f72f2446964d42408cd328",
     "extract_dir": "cron-sanity-checker",
     "depends": "python",
     "bin": [
@@ -18,5 +18,8 @@
         "jsonpath": "$[0].name",
         "regex": "v([\\d.]+)"
     },
-    "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`). Run: cron-sanity-checker \"*/5 * * * *\" --show-next 3"
+    "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`). Run: cron-sanity-checker --help. Changelog: https://git.canutethegreat.com/CanuteTheGreat/cron-sanity-checker/releases",
+    "autoupdate": {
+        "url": "https://git.canutethegreat.com/CanuteTheGreat/cron-sanity-checker/archive/v$version.zip"
+    }
 }

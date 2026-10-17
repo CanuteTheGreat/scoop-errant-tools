@@ -1,10 +1,10 @@
 {
-    "version": "1.1.0",
-    "description": "Audit a domain's SPF/DKIM/DMARC/MX email authentication hygiene, free and zero-dependency",
-    "homepage": "https://git.canutethegreat.com/CanuteTheGreat/mail-security-auditor",
+    "version": "1.2.0",
+    "description": "Audit a domain's SPF (10-lookup limit), DKIM, DMARC, MTA-STS, TLS-RPT, BIMI and MX email security",
+    "homepage": "https://errant.solutions/tools/mail-security-auditor.html",
     "license": "MIT",
-    "url": "https://git.canutethegreat.com/CanuteTheGreat/mail-security-auditor/archive/v1.1.0.zip",
-    "hash": "c12224a687d9433beaa6d69ceab9324555b643ae87d5e13e006bd5a76965ae8c",
+    "url": "https://git.canutethegreat.com/CanuteTheGreat/mail-security-auditor/archive/v1.2.0.zip",
+    "hash": "a03244b3567d89a496cafad25da0257e638a9438fd4c78c8103c33bb00b5d2ee",
     "extract_dir": "mail-security-auditor",
     "depends": "python",
     "bin": [
@@ -18,5 +18,8 @@
         "jsonpath": "$[0].name",
         "regex": "v([\\d.]+)"
     },
-    "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`). Run: mail-security-auditor example.com"
+    "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`). Run: mail-security-auditor --help. Changelog: https://git.canutethegreat.com/CanuteTheGreat/mail-security-auditor/releases",
+    "autoupdate": {
+        "url": "https://git.canutethegreat.com/CanuteTheGreat/mail-security-auditor/archive/v$version.zip"
+    }
 }
