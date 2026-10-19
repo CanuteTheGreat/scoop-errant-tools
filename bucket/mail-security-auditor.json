@@ -1,10 +1,10 @@
 {
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "Audit a domain's SPF (10-lookup limit), DKIM, DMARC, MTA-STS, TLS-RPT, BIMI and MX email security",
     "homepage": "https://errant.solutions/tools/mail-security-auditor.html",
     "license": "MIT",
-    "url": "https://git.canutethegreat.com/CanuteTheGreat/mail-security-auditor/archive/v1.2.0.zip",
-    "hash": "a03244b3567d89a496cafad25da0257e638a9438fd4c78c8103c33bb00b5d2ee",
+    "url": "https://git.canutethegreat.com/CanuteTheGreat/mail-security-auditor/archive/v1.2.1.zip",
+    "hash": "ade5841ffef838ed7259ae8f53efd425b362e7906e9a148e7e1277d2babcbc97",
     "extract_dir": "mail-security-auditor",
     "depends": "python",
     "bin": [
