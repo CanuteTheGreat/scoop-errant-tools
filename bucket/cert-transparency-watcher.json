@@ -1,10 +1,10 @@
 {
-    "version": "1.2.1",
+    "version": "1.3.0",
     "description": "Watch Certificate Transparency logs for new certificates, unexpected issuers and subdomains",
     "homepage": "https://errant.solutions/tools/cert-transparency-watcher.html",
     "license": "MIT",
-    "url": "https://git.canutethegreat.com/CanuteTheGreat/cert-transparency-watcher/archive/v1.2.1.zip",
-    "hash": "f999df936c9765dfe9e4d3a533fce7fc4c96bbf7422bd9481f4d6817e2713c19",
+    "url": "https://git.canutethegreat.com/CanuteTheGreat/cert-transparency-watcher/archive/v1.3.0.zip",
+    "hash": "c506d52e348da9d892c7ad1d55e1d53b8f9b965a9d432f915d36e321cf6c5c6e",
     "extract_dir": "cert-transparency-watcher",
     "depends": "python",
     "bin": [
