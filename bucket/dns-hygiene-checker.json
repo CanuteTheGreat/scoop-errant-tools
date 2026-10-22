@@ -3,9 +3,9 @@
     "description": "Find dangling DNS records and subdomain-takeover setups, plus CAA and DNSSEC checks, via DoH",
     "homepage": "https://errant.solutions/tools/dns-hygiene-checker.html",
     "license": "MIT",
-    "url": "https://git.canutethegreat.com/CanuteTheGreat/dns-hygiene-checker/archive/v1.2.1.zip",
-    "hash": "71f1a8c5dba54e3dc9e715027c3d86800f6a2ecb459acd223b60d80da863152a",
-    "extract_dir": "dns-hygiene-checker",
+    "url": "https://github.com/CanuteTheGreat/dns-hygiene-checker/archive/refs/tags/v1.2.1.zip",
+    "hash": "abf19070210f20730ef256e734f218182a5fdb7db2a3968e8f744dff5a719d92",
+    "extract_dir": "dns-hygiene-checker-1.2.1",
     "depends": "python",
     "bin": [
         [
@@ -14,12 +14,11 @@
         ]
     ],
     "checkver": {
-        "url": "https://git.canutethegreat.com/api/v1/repos/CanuteTheGreat/dns-hygiene-checker/tags",
-        "jsonpath": "$[0].name",
-        "regex": "v([\\d.]+)"
+        "github": "https://github.com/CanuteTheGreat/dns-hygiene-checker"
     },
-    "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`). Run: dns-hygiene-checker --help. Changelog: https://git.canutethegreat.com/CanuteTheGreat/dns-hygiene-checker/releases",
+    "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`). Run: dns-hygiene-checker --help. Changelog: https://github.com/CanuteTheGreat/dns-hygiene-checker/blob/master/CHANGELOG.md",
     "autoupdate": {
-        "url": "https://git.canutethegreat.com/CanuteTheGreat/dns-hygiene-checker/archive/v$version.zip"
+        "url": "https://github.com/CanuteTheGreat/dns-hygiene-checker/archive/refs/tags/v$version.zip",
+        "extract_dir": "dns-hygiene-checker-$version"
     }
 }

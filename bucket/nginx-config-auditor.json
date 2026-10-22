@@ -3,9 +3,9 @@
     "description": "Static analyzer for nginx configs (follows includes or nginx -T) flagging common misconfigurations",
     "homepage": "https://errant.solutions/tools/nginx-config-auditor.html",
     "license": "MIT",
-    "url": "https://git.canutethegreat.com/CanuteTheGreat/nginx-config-auditor/archive/v1.2.1.zip",
-    "hash": "afc757506c78c1cb7325fb87717b058013df3833661b982013abbb666787b952",
-    "extract_dir": "nginx-config-auditor",
+    "url": "https://github.com/CanuteTheGreat/nginx-config-auditor/archive/refs/tags/v1.2.1.zip",
+    "hash": "0e52172b3db7cdceb790d64a9adc1cc55d26e522123d08b11ebf38cc69f0b1d0",
+    "extract_dir": "nginx-config-auditor-1.2.1",
     "depends": "python",
     "bin": [
         [
@@ -14,12 +14,11 @@
         ]
     ],
     "checkver": {
-        "url": "https://git.canutethegreat.com/api/v1/repos/CanuteTheGreat/nginx-config-auditor/tags",
-        "jsonpath": "$[0].name",
-        "regex": "v([\\d.]+)"
+        "github": "https://github.com/CanuteTheGreat/nginx-config-auditor"
     },
-    "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`). Run: nginx-config-auditor --help. Changelog: https://git.canutethegreat.com/CanuteTheGreat/nginx-config-auditor/releases",
+    "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`). Run: nginx-config-auditor --help. Changelog: https://github.com/CanuteTheGreat/nginx-config-auditor/blob/master/CHANGELOG.md",
     "autoupdate": {
-        "url": "https://git.canutethegreat.com/CanuteTheGreat/nginx-config-auditor/archive/v$version.zip"
+        "url": "https://github.com/CanuteTheGreat/nginx-config-auditor/archive/refs/tags/v$version.zip",
+        "extract_dir": "nginx-config-auditor-$version"
     }
 }

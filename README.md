@@ -5,7 +5,7 @@ Scoop bucket for free command-line tools from [Errant Solutions](https://errant.
 ## Add this bucket
 
 ```
-scoop bucket add errant-tools https://git.canutethegreat.com/CanuteTheGreat/scoop-errant-tools
+scoop bucket add errant-tools https://github.com/CanuteTheGreat/scoop-errant-tools
 ```
 
 ## Tools
@@ -36,7 +36,7 @@ scoop install errant-tools/tls-cert-watchdog
 All tools are pure-stdlib Python 3 scripts except aws-waste-finder, which also needs
 `python -m pip install --user boto3`. Requires Python 3 on PATH -- `scoop install python` or the official python.org installer with the `.py` file association enabled.
 
-Source, issues, and the rest of our free tools: https://git.canutethegreat.com/CanuteTheGreat
+Source, issues, and the rest of our free tools: https://github.com/CanuteTheGreat
 
 ## Tests
 

@@ -3,9 +3,9 @@
     "description": "Check TLS certificate expiry, chain, key size and offered protocol versions, including STARTTLS services",
     "homepage": "https://errant.solutions/tools/tls-cert-watchdog.html",
     "license": "MIT",
-    "url": "https://git.canutethegreat.com/CanuteTheGreat/tls-cert-watchdog/archive/v1.2.0.zip",
-    "hash": "f5938397d546bb4659c45013aeb2e3fa2fd5cc31d56479c29eb99d90c7d0c766",
-    "extract_dir": "tls-cert-watchdog",
+    "url": "https://github.com/CanuteTheGreat/tls-cert-watchdog/archive/refs/tags/v1.2.0.zip",
+    "hash": "e369af2cfdde79cdf6b159c7b2392bd2daf33d6cc398a953abd6b30fd115e9a1",
+    "extract_dir": "tls-cert-watchdog-1.2.0",
     "depends": "python",
     "bin": [
         [
@@ -14,12 +14,11 @@
         ]
     ],
     "checkver": {
-        "url": "https://git.canutethegreat.com/api/v1/repos/CanuteTheGreat/tls-cert-watchdog/tags",
-        "jsonpath": "$[0].name",
-        "regex": "v([\\d.]+)"
+        "github": "https://github.com/CanuteTheGreat/tls-cert-watchdog"
     },
-    "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`). Run: tls-cert-watchdog --help. Changelog: https://git.canutethegreat.com/CanuteTheGreat/tls-cert-watchdog/releases",
+    "notes": "Requires Python 3 on PATH (python.org installer with .py file association, or `scoop install python`). Run: tls-cert-watchdog --help. Changelog: https://github.com/CanuteTheGreat/tls-cert-watchdog/blob/main/CHANGELOG.md",
     "autoupdate": {
-        "url": "https://git.canutethegreat.com/CanuteTheGreat/tls-cert-watchdog/archive/v$version.zip"
+        "url": "https://github.com/CanuteTheGreat/tls-cert-watchdog/archive/refs/tags/v$version.zip",
+        "extract_dir": "tls-cert-watchdog-$version"
     }
 }

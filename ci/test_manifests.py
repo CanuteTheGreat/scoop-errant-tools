@@ -4,7 +4,8 @@
 For each manifest it downloads the real `url`, checks `hash` (sha256), unpacks the
 zip, checks `extract_dir` and every `bin` entry exist, and runs each bin with Python
 and `--help` (exit 0, prints usage) and `--version` (must print the manifest's version). It also checks `version` matches the tag in the
-URL and that `checkver` points at the tool's tag list on Forgejo.
+URL, that `url`/`checkver`/`autoupdate` use the tool's public GitHub repo (the site never sends users to our
+own git host) and that `extract_dir` is GitHub's `<repo>-<version>` archive folder.
 """
 import glob
 import hashlib
@@ -28,7 +29,7 @@ def download(url):
         try:
             with urllib.request.urlopen(url, timeout=90) as r:
                 return r.read()
-        except Exception as e:  # Forgejo builds archives on first request
+        except Exception as e:  # archive downloads can fail transiently
             last = e
             time.sleep(5)
     raise last
@@ -41,7 +42,13 @@ def check(path):
     assert f"/v{m['version']}." in m["url"], f"version {m['version']} doesn't match url {m['url']}"
     repo = m["url"].split("/CanuteTheGreat/", 1)[1].split("/", 1)[0]
     assert m["homepage"] == f"https://errant.solutions/tools/{repo}.html", m["homepage"]
-    assert m["checkver"].get("url", "").endswith(f"/repos/CanuteTheGreat/{repo}/tags"), m["checkver"]
+    gh = f"https://github.com/CanuteTheGreat/{repo}"
+    assert m["url"] == f"{gh}/archive/refs/tags/v{m['version']}.zip", m["url"]
+    assert m["checkver"] == {"github": gh}, m["checkver"]
+    assert m.get("extract_dir") == f"{repo}-{m['version']}", m.get("extract_dir")
+    assert m.get("autoupdate") == {"url": f"{gh}/archive/refs/tags/v$version.zip", "extract_dir": f"{repo}-$version"}, \
+        m.get("autoupdate")
+    assert "canutethegreat.com" not in json.dumps(m).lower(), "manifest still points at our own git host"
     data = download(m["url"])
     got = hashlib.sha256(data).hexdigest()
     assert got == m["hash"].lower(), f"hash mismatch for {m['url']}: manifest {m['hash']}, actual {got}"
